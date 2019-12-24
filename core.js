@@ -2,6 +2,7 @@
 Author: SWAGAT PARIDA
 */  
 
+//Beginning of Core JS
         var copiedObject;
         var copiedObjects = new Array();
         var canvasScale = 1;

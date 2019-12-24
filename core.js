@@ -21,6 +21,7 @@ var onload = function () {
     });
 };
 
+//Solid Circle Function
         var onSolidCircle = function () {
             canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 150, left: 150 }));
         }

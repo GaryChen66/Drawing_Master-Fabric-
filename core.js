@@ -13,6 +13,8 @@ var src = window.location.href.replace('index.html','') + '/test.jpg';
 var canvas = new fabric.Canvas('canvas', {
     isDrawingMode: false
 });
+
+//Load Function
 var onload = function () {
     fabric.Image.fromURL(src, function (oImg) {
         canvas.add(oImg);

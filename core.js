@@ -3,20 +3,21 @@ Author: SWAGAT PARIDA
 */  
 
 //Beginning of Core JS
-        var copiedObject;
-        var copiedObjects = new Array();
-        var canvasScale = 1;
-        var SCALE_FACTOR = 1.2;
-        var src = window.location.href.replace('index.html','') + '/test.jpg';
-        var canvas = new fabric.Canvas('canvas', {
-            isDrawingMode: false
-        });
-        var onload = function () {
 
-            fabric.Image.fromURL(src, function (oImg) {
-                canvas.add(oImg);
-            });
-        };
+//initia variables
+var copiedObject;
+var copiedObjects = new Array();
+var canvasScale = 1;
+var SCALE_FACTOR = 1.2;
+var src = window.location.href.replace('index.html','') + '/test.jpg';
+var canvas = new fabric.Canvas('canvas', {
+    isDrawingMode: false
+});
+var onload = function () {
+    fabric.Image.fromURL(src, function (oImg) {
+        canvas.add(oImg);
+    });
+};
 
         var onSolidCircle = function () {
             canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 150, left: 150 }));
